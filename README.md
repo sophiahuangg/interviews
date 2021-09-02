@@ -20,7 +20,7 @@ This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/ap
 7. Generate a histogram of one of the series
 8. Save all plots as appropriately named `.png` files
 9. Once these plots are completed, find two more series and pull them 
-10. Plot these two series either (1) against each other in a scatterplot **OR** (2) together as one time series plot. Once again, style the plot to your personal preference
+10. Plot these two series either (1) against each other in a scatterplot **OR** (2) together as one time series plot. Once again, style the plot to your personal preference. Once again, save this as a `.png` file.
 11. Email the link to your repo where you have produced this work **no later than 11:59pm on September 12th.** We will get back to you once all projects are submitted
 
 Remmeber, we are not necessarily testing your ability to perform all of these steps from memory. A lot of what we do depends on picking up new things quickly when we need to use them. Don't be afraid to consult Google or ask Abhi or Bettina for assistance at any step of the way. Part of what we want to see is how you handle problems you don't know the answer to -- it's better to ask 50 questions and turn in a finished final product than to ask none and turn in something unfinished!
