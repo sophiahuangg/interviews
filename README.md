@@ -6,8 +6,8 @@ This is the main repo we will use for the Lowe Institute's interview process for
 You need to pull some data from [The Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/). Specifically, the series you need are the following:
 
 - Quarterly Total Nonfarm Employment (ID [PAYEMS](https://fred.stlouisfed.org/series/PAYEMS#0)) from 2000 through 2020
-- Real Gross Domestic Product (ID [GDPC1](https://fred.stlouisfed.org/series/GDPC1)) from 2000 through 2020
-- Consumer Price Index (ID [CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL#0)) from 2000 through 2020
+- Quarterly Real Gross Domestic Product (ID [GDPC1](https://fred.stlouisfed.org/series/GDPC1)) from 2000 through 2020
+- Quarterly Consumer Price Index (ID [CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL#0)) from 2000 through 2020
 
 This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/api/fred/series_observations.html) using a programming language of your choice (preferably Python since that's what we mainly use, but any other language is acceptable for this interview as well). That is, you cannot download this data from FRED manually. You should follow the following workflow:
 
@@ -21,7 +21,7 @@ This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/ap
 8. Save all plots as appropriately named `.png` files
 9. Once these plots are completed, find two more series and pull them 
 10. Plot these two series either (1) against each other in a scatterplot **OR** (2) together as one time series plot. Once again, style the plot to your personal preference. Once again, save this as a `.png` file.
-11. Email the link to your repo where you have produced this work **no later than 11:59pm on September 12th.** We will get back to you once all projects are submitted
+11. Email the link to your repo where you have produced this work **no later than 11:59pm on September 12th.** We will get back to you once all projects are submitted. Submit to auppal22@cmc.edu and bbenitez22@cmc.edu
 
 Remmeber, we are not necessarily testing your ability to perform all of these steps from memory. A lot of what we do depends on picking up new things quickly when we need to use them. Don't be afraid to consult Google or ask Abhi or Bettina for assistance at any step of the way. Part of what we want to see is how you handle problems you don't know the answer to -- it's better to ask 50 questions and turn in a finished final product than to ask none and turn in something unfinished!
 
