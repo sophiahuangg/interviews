@@ -1,5 +1,5 @@
 # Interviews
-This is the main repo we will use for the Lowe Institute's interview process for the automation team. You are expected to fork this repo and work on your own fork (or create your own and just keep this as a reference). The point of this assessment is to ensure that you can work with, or at least quickly learn, the basics of some packages you will be using a lot -- namely, `pandas`, `matplotlib.pyplot`, and `requests` (more accurately, we will be using `aiohttp` in conjunction with `asyncio`, but we will train you on those if necessary). We do not expect this to be an incredibly difficult or long task, and should be able to be completed in less than 3 hours.
+This is the main repo we will use for the Lowe Institute's interview process for the automation team. You are expected to fork this repo and work on your own fork (or create your own and just keep this as a reference). The point of this assessment is to ensure that you can work with, or at least quickly learn, the basics of some packages you will be using a lot -- namely, `pandas`, `matplotlib.pyplot`, and `requests` (for our actual work, we will be using `aiohttp` in conjunction with `asyncio`, but we will train you on those if necessary). We do not expect this to be an incredibly difficult or long task, and should be able to be completed in less than 3 hours.
 
 # The Problem
 
@@ -9,10 +9,10 @@ You need to pull some data from [The Federal Reserve Economic Data (FRED)](https
 - Quarterly Real Gross Domestic Product (ID [GDPC1](https://fred.stlouisfed.org/series/GDPC1)) from 2000 through 2020
 - Quarterly Consumer Price Index (ID [CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL#0)) from 2000 through 2020
 
-This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/api/fred/series_observations.html) using a programming language of your choice (preferably Python since that's what we mainly use, but any other language is acceptable for this interview as well). That is, you cannot download this data from FRED manually. You should follow the following workflow:
+This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/api/fred/series_observations.html) using a programming language of your choice (**preferably Python** since that's what we mainly use, but any other language is acceptable for this interview as well). That is, you cannot download this data from FRED manually. You should follow the following workflow:
 
-1. Get an API key from FRED -- instructions for this can be found [here](https://fred.stlouisfed.org/docs/api/api_key.html). You will need to sign up for a research account for FRED, in which you will also need to provide a reason for requesting an API key. Provide a reason along the lines of "I am writing an automated data pipeline for my school's research institute (the Lowe Institute of Political Economy), where we produce analyses that include some FRED data. This API key will be used for development and testing code prior to deployment." Do **NOT** use this wording exactly, but write something along these lines.
-2. Gather the above series from FRED. Documentation can be found [here](https://fred.stlouisfed.org/docs/api/fred/series_observations.html)
+1. Get an API key from FRED -- instructions for this can be found [here](https://fred.stlouisfed.org/docs/api/api_key.html). You will need to sign up for a research account for FRED, in which you will also need to provide a reason for requesting an API key. Provide a reason along the lines of "I am writing an automated data pipeline for my school's research institute (the Lowe Institute of Political Economy), where we produce analyses that include some FRED data. This API key will be used for development and testing code prior to deployment." Do **NOT** use this wording exactly, but write something along these lines
+2. Gather the above series from FRED using queries to their API. Documentation can be found [here](https://fred.stlouisfed.org/docs/api/fred/series_observations.html)
 3. Join the series together into one dataframe and rename the columns into something meaningful (this can be done in either order)
 4. Save this dataframe as a `.csv` file with an appropriate name
 5. Plot all three time series on the same plot, with time as the horizontal axis. Style the plot to your personal preference
@@ -32,16 +32,18 @@ Some basic ground rules that must be established. We will not consider an applic
 1. No usage of a pre-built API wrapper built for FRED is allowed for any reason. This includes looking at any source code for said wrappers
 2. No collaboration is permitted
 3. If you get anything from online, cite it and explain what is happening at each step with comments. If we find plagiarized code that is completely uncommented, we will assume you do not actually understand what your code is doing.
-4. Do not write your API key explicitly in any scripts. Instead, include your API key in a `.env` file and either source it in the shell you are running your script with before running it (via `source /path/to/file/.env`) or (preferably) using the [`python-dotenv`](https://pypi.org/project/python-dotenv/) package. An example of how to use it is below:
+4. Do not write your API key explicitly in any scripts. Instead, include your API key in a `.env` file and either source it in the shell you are running your script with before running it (via `source /path/to/file/.env`) or using the [`python-dotenv`](https://pypi.org/project/python-dotenv/) package. An example of how to use it is below.
+
+The reason for the final rule is that our repositories are public -- we do not want API keys sitting out in the open. `.env` files are listed under our `.gitignore` file, so these files will not end up in any remote repository.
 
 # Some Tips
 
-1. You will be pulling multiple series. Any time you need to do something more than once, use or write a function for it! Bonus points for type hints
+1. You will be pulling multiple series. Any time you need to do something more than once, use or write a function for it! Bonus points for type hints and good documentation (docstrings and comments in the code)
 2. Rather than hard-coding the URL in, use the `params` argument in `requests.get()`, which will form the URL for you (see example below -- or the [requests docs](https://docs.python-requests.org/en/master/user/quickstart/)).
-3. You don't need to do anything super complicated -- remember that this is meant to test your core competencies, not if you can build a complex system from scratch. We do not need you to write a fully functioning API wrapper, just something that accomplishes this task.
+3. You don't need to do anything super complicated -- remember that this is meant to test your core competencies, not if you can build a complex system from scratch. We do not need you to write a fully functioning API wrapper, just something that accomplishes this particular task.
 4. If you are using Python, the only packages you should need are `pandas`, `matplotlib.pyplot`, and `requests`. You will also need `load_dotenv()` from the `dotenv` package -- as shown above. You are welcome to use more libraries for plot styling or anything else (`seaborn`, for example) -- but that is up to your discretion
-5. Style points matter in your plots! We are looking for, among other things, good data communication. Play around with the plot styling options for a bit!
-6. Comment, comment, comment -- code means nothing if you can't understand it
+5. Style points matter in your plots! We are looking for, among other things, good data communication. Play around with the plot styling options for a bit (but don't stress it too much)!
+6. Comment, comment, comment -- code only you can understand is useless code
 7. Along that line, try to make your code as readable as possible -- we do have to read it after all :)
 
 Crude example of using `requests.get()` and `load_dotenv()`:
