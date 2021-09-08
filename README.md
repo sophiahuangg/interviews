@@ -11,17 +11,19 @@ You need to pull some data from [The Federal Reserve Economic Data (FRED)](https
 
 This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/api/fred/series_observations.html) using a programming language of your choice (**preferably Python** since that's what we mainly use, but any other language is acceptable for this interview as well). That is, you cannot download this data from FRED manually. You should follow the following workflow:
 
-1. Get an API key from FRED -- instructions for this can be found [here](https://fred.stlouisfed.org/docs/api/api_key.html). You will need to sign up for a research account for FRED, in which you will also need to provide a reason for requesting an API key. Provide a reason along the lines of "I am writing an automated data pipeline for my school's research institute (the Lowe Institute of Political Economy), where we produce analyses that include some FRED data. This API key will be used for development and testing code prior to deployment." Do **NOT** use this wording exactly, but write something along these lines
-2. Gather the above series from FRED using queries to their API. Documentation can be found [here](https://fred.stlouisfed.org/docs/api/fred/series_observations.html)
-3. Join the series together into one dataframe and rename the columns into something meaningful (this can be done in either order)
-4. Save this dataframe as a `.csv` file with an appropriate name
-5. Plot all three time series on the same plot, with time as the horizontal axis. Style the plot to your personal preference
-6. Plot two of these series against each other in a scatterplot
-7. Generate a histogram of one of the series
-8. Save all plots as appropriately named `.png` files
-9. Once these plots are completed, find two more series and pull them 
-10. Plot these two series either (1) against each other in a scatterplot **OR** (2) together as one time series plot. Once again, style the plot to your personal preference. Once again, save this as a `.png` file.
-11. Email the link to your repo where you have produced this work **no later than 11:59pm on September 12th.** We will get back to you once all projects are submitted. Submit to auppal22@cmc.edu and bbenitez22@cmc.edu
+1. Fork this repository (or create a new one where you will work). If you create a new one, make sure to use the `python` format for `.gitignore`!
+2. Get an API key from FRED -- instructions for this can be found [here](https://fred.stlouisfed.org/docs/api/api_key.html). You will need to sign up for a research account for FRED, in which you will also need to provide a reason for requesting an API key. Provide a reason along the lines of "I am writing an automated data pipeline for my school's research institute (the Lowe Institute of Political Economy), where we produce analyses that include some FRED data. This API key will be used for development and testing code prior to deployment." Do **NOT** use this wording exactly, but write something along these lines
+3. Gather the above series from FRED using queries to their API. Documentation can be found [here](https://fred.stlouisfed.org/docs/api/fred/series_observations.html)
+4. Join the series together into one dataframe and rename the columns into something meaningful (this can be done in either order)
+5. Save this dataframe as a `.csv` file with an appropriate name
+6. Plot all three time series on the same plot, with time as the horizontal axis. Style the plot to your personal preference
+7. Plot two of these series against each other in a scatterplot
+8. Generate a histogram of one of the series
+9. Save all plots as appropriately named `.png` files
+10. Once these plots are completed, find two more series and pull them 
+11. Plot these two series either (1) against each other in a scatterplot **OR** (2) together as one time series plot. Once again, style the plot to your personal preference. Once again, save this as a `.png` file
+12. Email the link to your repo where you have produced this work **no later than 11:59pm on September 12th.** We will get back to you once all projects are submitted. Submit to auppal22@cmc.edu and bbenitez22@cmc.edu. In your submission, if it is not immediately obvious where the important files are (code and plots), let us know
+13. If you alo wish to be considered for the forecast team, please let us know in the same email you submit your project in. We need to know this ahead of time so we can adjust your interview accordingly
 
 Remmeber, we are not necessarily testing your ability to perform all of these steps from memory. A lot of what we do depends on picking up new things quickly when we need to use them. Don't be afraid to consult Google or ask Abhi or Bettina for assistance at any step of the way. Part of what we want to see is how you handle problems you don't know the answer to -- it's better to ask 50 questions and turn in a finished final product than to ask none and turn in something unfinished!
 
