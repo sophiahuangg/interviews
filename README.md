@@ -1,6 +1,18 @@
 # Interviews
 This is the main repo we will use for the Lowe Institute's interview process for the automation team. You are expected to fork this repo and work on your own fork (or create your own and just keep this as a reference). The point of this assessment is to ensure that you can work with, or at least quickly learn, the basics of some packages you will be using a lot -- namely, `pandas`, `matplotlib.pyplot`, and `requests` (for our actual work, we will be using `aiohttp` in conjunction with `asyncio`, but we will train you on those if necessary). We do not expect this to be an incredibly difficult or long task, and should be able to be completed in less than 3 hours.
 
+# Installing Packages
+
+The packages you need for this interview are `dotenv`, `matplotlib`, `pandas`, `requests`, and maybe `numpy`. To install them, run
+
+```bash
+pip install python-dotenv matplotlib pandas requests numpy
+```
+
+Note if you are using a computer with Apple silicom, the installation process will likely fail on `numpy` / `pandas` (as it requires `numpy`). If this happens, please reach out to Abhi (auppal22@cmc.edu).
+
+You are permitted to use any other packages that do not violate the rules below as well.
+
 # The Problem
 
 You need to pull some data from [The Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/). Specifically, the series you need are the following:
