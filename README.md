@@ -28,7 +28,7 @@ This data must be pulled from the [FRED API](https://fred.stlouisfed.org/docs/ap
 3. Gather the above series from FRED using queries to their API. Documentation can be found [here](https://fred.stlouisfed.org/docs/api/fred/series_observations.html)
 4. Join the series together into one dataframe and rename the columns into something meaningful (this can be done in either order)
 5. Save this dataframe as a `.csv` file with an appropriate name
-6. Plot all three time series on the same plot, with time as the horizontal axis. Style the plot to your personal preference
+6. Plot two of these time series on the same plot, with time as the horizontal axis. Style the plot to your personal preference. You may need to use two separate y-axes (see https://www.originlab.com/doc/Origin-Help/Double-Y-Graph for an example)
 7. Plot two of these series against each other in a scatterplot
 8. Generate a histogram of one of the series
 9. Save all plots as appropriately named `.png` files
