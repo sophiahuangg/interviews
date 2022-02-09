@@ -1,5 +1,5 @@
 # Interviews
-This is the main repo we will use for the Lowe Institute's interview process for the automation team. You are expected to fork this repo and work on your own fork (or create your own and just keep this as a reference). The point of this assessment is to ensure that you can work with, or at least quickly learn, the basics of some packages you will be using a lot -- namely, `pandas`, `matplotlib.pyplot`, and `requests` (for our actual work, we will be using `aiohttp` in conjunction with `asyncio`, but we will train you on those if necessary). We do not expect this to be an incredibly difficult or long task, and should be able to be completed in less than 3 hours.
+This is the main repo we will use for the Lowe Institute's interview process for the automation team. You are expected to fork this repo and work on your own fork (or create your own and just keep this as a reference). The point of this assessment is to ensure that you can work with, or at least quickly learn, the basics of some packages you will be using a lot -- namely, `pandas`, `plotly`, and `requests` (for our actual work, we will be using `aiohttp` in conjunction with `asyncio`, but we will train you on those if necessary). We do not expect this to be an incredibly difficult or long task, and should be able to be completed in less than 3 hours.
 
 # Installing Packages
 
@@ -55,8 +55,8 @@ The reason for the final rule is that our repositories are public -- we do not w
 1. You will be pulling multiple series. Any time you need to do something more than once, use or write a function for it! Bonus points for type hints and good documentation (docstrings and comments in the code)
 2. Rather than hard-coding the URL in, use the `params` argument in `requests.get()`, which will form the URL for you (see example below -- or the [requests docs](https://docs.python-requests.org/en/master/user/quickstart/)).
 3. You don't need to do anything super complicated -- remember that this is meant to test your core competencies, not if you can build a complex system from scratch. We do not need you to write a fully functioning API wrapper, just something that accomplishes this particular task.
-4. If you are using Python, the only packages you should need are `pandas`, `matplotlib.pyplot`, and `requests`. You will also need `load_dotenv()` from the `dotenv` package -- as shown above. You are welcome to use more libraries for plot styling or anything else (`seaborn`, for example) -- but that is up to your discretion
-5. Style points matter in your plots! We are looking for, among other things, good data communication. Play around with the plot styling options for a bit (but don't stress it too much)!
+4. If you are using Python, the only packages you should need are `pandas`, `plotly`, and `requests`. You will also need `load_dotenv()` from the `dotenv` package -- as shown above. You are welcome to use more libraries for plot styling or anything else (`seaborn` or `matplotlib`, for example) -- but that is up to your discretion
+5. Style points matter in your plots! We are looking for, among other things, good data communication. Play around with the plot styling options for a bit (but don't stress it too much)! Our suggestion is to first always look for themes and/or templates that fit the style you're hoping to achieve
 6. Comment, comment, comment -- code only you can understand is useless code
 7. Along that line, try to make your code as readable as possible -- we do have to read it after all :)
 
