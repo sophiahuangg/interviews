@@ -3,13 +3,13 @@ This is the main repo we will use for the Lowe Institute's interview process for
 
 # Installing Packages
 
-The packages you need for this interview are `dotenv`, `matplotlib`, `pandas`, `requests`, and maybe `numpy`. To install them, run
+The packages you need for this interview are `dotenv`, `plotly`, `pandas`, `requests`, and maybe `numpy`. To install them, run
 
 ```bash
-pip install python-dotenv matplotlib pandas requests numpy
+pip install python-dotenv plotly pandas requests numpy
 ```
 
-Note if you are using a computer with Apple silicom, the installation process will likely fail on `numpy` / `pandas` (as it requires `numpy`). If this happens, please reach out to Abhi (auppal22@cmc.edu).
+Note if you are using a computer with Apple silicon (M1 chip), the installation process will likely fail on `numpy` / `pandas` (as it requires `numpy`). If this happens, please reach out to Abhi (auppal22@cmc.edu).
 
 You are permitted to use any other packages that do not violate the rules below as well.
 
